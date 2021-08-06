@@ -1,20 +1,20 @@
-.container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
-.dice {
-  text-align: center;
-  display: inline-block;
-}
+/* GENERAL */
 
 body {
   background-color: #393e46;
 }
 
+/* DICE ROLL */
+
+.container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
 h1 {
-  margin: 30px;
+  margin: 30px 30px 0;
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
@@ -22,10 +22,15 @@ h1 {
 }
 
 p {
-  padding: 0 7rem;
+  padding: 30px 7rem 0;
   font-size: 2rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
 }
 
 img {
@@ -34,10 +39,14 @@ img {
 
 footer {
   position: absolute;
-  top: 42rem;
+  top: 43rem;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #eeeeee;
   text-align: center;
   font-family: "Indie Flower", cursive;
+}
+
+footer img {
+  width: 1.5rem;
 }

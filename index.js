@@ -4,12 +4,12 @@ if (performance.getEntriesByType("navigation")[0].type === "reload") {
 
 function rollDice() {
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-  var randomDiceSource1 = "images/dice" + randomNumber1 + ".png";
+  var randomDiceSource1 = "images/dice" + randomNumber1 + ".svg";
   var image1 = document.querySelectorAll("img")[0];
   image1.setAttribute("src", randomDiceSource1);
 
   var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-  var randomDiceSource2 = "images/dice" + randomNumber2 + ".png";
+  var randomDiceSource2 = "images/dice" + randomNumber2 + ".svg";
   var image2 = document.querySelectorAll("img")[1];
   image2.setAttribute("src", randomDiceSource2);
 
