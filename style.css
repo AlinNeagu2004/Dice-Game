@@ -22,17 +22,21 @@ h1 {
 }
 
 p {
+  padding: 0 7rem;
   font-size: 2rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
 }
 
 img {
-  width: 80%;
+  width: 15rem;
 }
 
 footer {
-  margin-top: 5%;
+  position: absolute;
+  top: 42rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #eeeeee;
   text-align: center;
   font-family: "Indie Flower", cursive;
