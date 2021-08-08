@@ -1,6 +1,8 @@
-if (performance.getEntriesByType("navigation")[0].type === "reload") {
-  rollDice();
-}
+// if (performance.getEntriesByType("navigation")[0].type === "reload") {
+//   rollDice();
+// }
+
+var button = document.getElementById("roll-button");
 
 function rollDice() {
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;
@@ -21,3 +23,5 @@ function rollDice() {
     document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
   }
 }
+
+button.addEventListener("click", rollDice);
