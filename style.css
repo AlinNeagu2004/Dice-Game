@@ -23,16 +23,20 @@ h1 {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
 }
 
 .dice {
-  text-align: center;
   display: inline-block;
 }
 
+.dice:first-child {
+  padding: 2rem 7rem 0 0;
+}
+
 p {
-  padding: 30px 7rem 0;
   font-size: 2rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
