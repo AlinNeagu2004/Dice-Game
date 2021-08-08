@@ -21,16 +21,21 @@ h1 {
   color: #4ecca3;
 }
 
-p {
-  padding: 30px 7rem 0;
-  font-size: 2rem;
-  color: #4ecca3;
-  font-family: "Indie Flower", cursive;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .dice {
   text-align: center;
   display: inline-block;
+}
+
+p {
+  padding: 30px 7rem 0;
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
 }
 
 img {
