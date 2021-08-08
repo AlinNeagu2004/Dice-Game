@@ -36,6 +36,11 @@ main {
   padding: 2rem 7rem 0 0;
 }
 
+.dice-content {
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   font-size: 2rem;
   color: #4ecca3;
