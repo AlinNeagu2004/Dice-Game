@@ -54,8 +54,24 @@ p {
   font-family: "Indie Flower", cursive;
 }
 
+p:nth-child(1) {
+  grid-area: p2;
+}
+
+p:nth-child(2) {
+  grid-area: p2;
+}
+
 img {
   width: calc(13vw + 2.5rem);
+}
+
+img:nth-child(1) {
+  grid-area: img1;
+}
+
+img:nth-child(2) {
+  grid-area: img2;
 }
 
 #btn {
@@ -67,6 +83,7 @@ footer {
   color: #eeeeee;
   text-align: center;
   font-family: "Indie Flower", cursive;
+  grid-area: footer;
 }
 
 footer img {

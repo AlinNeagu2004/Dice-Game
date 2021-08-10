@@ -8,6 +8,8 @@ if (styles_applied.display === "none") {
     rollDice();
   }
 } else if (styles_applied.display === "inline-block") {
+  document.querySelectorAll(".dice-content img")[0].removeAttribute("src");
+  document.querySelectorAll(".dice-content img")[1].removeAttribute("src");
   rollDice();
 }
 
