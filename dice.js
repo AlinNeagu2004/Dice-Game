@@ -45,6 +45,9 @@ function rollDice() {
       "Draw!",
       "Draw!",
       "Draw!",
+      "Draw!",
+      "Draw!",
+      "Draw!",
       "Refresh Me",
       "Refresh Me",
       "Refresh Me",
@@ -72,6 +75,9 @@ function rollDice() {
       "🚩 Player 1 Wins!",
       "🚩 Player 1 Wins!",
       "🚩 Player 1 Wins!",
+      "🚩 Player 1 Wins!",
+      "🚩 Player 1 Wins!",
+      "🚩 Player 1 Wins!",
       "Refresh Me",
       "Refresh Me",
       "Refresh Me",
@@ -92,6 +98,9 @@ function rollDice() {
     }
   } else {
     var secondWinner = [
+      "Player 2 Wins! 🚩",
+      "Player 2 Wins! 🚩",
+      "Player 2 Wins! 🚩",
       "Player 2 Wins! 🚩",
       "Player 2 Wins! 🚩",
       "Player 2 Wins! 🚩",
