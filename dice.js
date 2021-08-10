@@ -4,12 +4,16 @@ var element = document.querySelector("#btn");
 var styles_applied = window.getComputedStyle(element);
 
 if (styles_applied.display === "none") {
+  document
+    .querySelectorAll(".dice-content img")[0]
+    .setAttribute("src", "images/dice6.svg");
+  document
+    .querySelectorAll(".dice-content img")[1]
+    .setAttribute("src", "images/dice6.svg");
   if (performance.getEntriesByType("navigation")[0].type === "reload") {
     rollDice();
   }
 } else if (styles_applied.display === "inline-block") {
-  document.querySelectorAll(".dice-content img")[0].removeAttribute("src");
-  document.querySelectorAll(".dice-content img")[1].removeAttribute("src");
   rollDice();
 }
 
@@ -24,19 +28,28 @@ function rollDice() {
   var image2 = document.querySelectorAll("img")[1];
   image2.setAttribute("src", randomDiceSource2);
 
-  if (randomNumber1 === randomNumber2) {
-    document.querySelector("h1").innerHTML = "Draw!";
-  } else if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
-  } else {
-    document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
+  if (
+    randomNumber1 === randomNumber2 &&
+    randomNumber1 > randomNumber2 &&
+    randomNumber1 < randomNumber2
+  ) {
+    document.querySelector("h1").innerHTML = "Refresh Me";
   }
 
   if (randomNumber1 === randomNumber2) {
-    var draw = ["Refresh Me", "Refresh Me", "Draw!", "Draw!"];
+    var draw = [
+      "Draw!",
+      "Draw!",
+      "Draw!",
+      "Draw!",
+      "Draw!",
+      "Refresh Me",
+      "Refresh Me",
+      "Refresh Me",
+    ];
     var counter = 0;
     var elem = document.querySelector("h1");
-    var inst = setInterval(changeDraw, 1000);
+    var inst = setInterval(changeDraw, 250);
 
     function changeDraw() {
       elem.innerHTML = draw[counter];
@@ -48,14 +61,18 @@ function rollDice() {
     }
   } else if (randomNumber1 > randomNumber2) {
     var firstWinner = [
-      "Refresh Me",
-      "Refresh Me",
       "🚩 Player 1 Wins!",
       "🚩 Player 1 Wins!",
+      "🚩 Player 1 Wins!",
+      "🚩 Player 1 Wins!",
+      "🚩 Player 1 Wins!",
+      "Refresh Me",
+      "Refresh Me",
+      "Refresh Me",
     ];
     var counter = 0;
     var elem = document.querySelector("h1");
-    var inst = setInterval(changeFirstWinner, 1000);
+    var inst = setInterval(changeFirstWinner, 250);
 
     function changeFirstWinner() {
       elem.innerHTML = firstWinner[counter];
@@ -67,14 +84,18 @@ function rollDice() {
     }
   } else {
     var secondWinner = [
-      "Refresh Me",
-      "Refresh Me",
       "Player 2 Wins! 🚩",
       "Player 2 Wins! 🚩",
+      "Player 2 Wins! 🚩",
+      "Player 2 Wins! 🚩",
+      "Player 2 Wins! 🚩",
+      "Refresh Me",
+      "Refresh Me",
+      "Refresh Me",
     ];
     var counter = 0;
     var elem = document.querySelector("h1");
-    var inst = setInterval(changeSecondWinner, 1000);
+    var inst = setInterval(changeSecondWinner, 250);
 
     function changeSecondWinner() {
       elem.innerHTML = secondWinner[counter];
