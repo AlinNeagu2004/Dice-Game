@@ -49,7 +49,7 @@ function rollDice() {
     ];
     var counter = 0;
     var elem = document.querySelector("h1");
-    var inst = setInterval(changeDraw, 250);
+    var inst = setInterval(changeDraw, 200);
 
     function changeDraw() {
       elem.innerHTML = draw[counter];
@@ -72,7 +72,7 @@ function rollDice() {
     ];
     var counter = 0;
     var elem = document.querySelector("h1");
-    var inst = setInterval(changeFirstWinner, 250);
+    var inst = setInterval(changeFirstWinner, 200);
 
     function changeFirstWinner() {
       elem.innerHTML = firstWinner[counter];
@@ -95,7 +95,7 @@ function rollDice() {
     ];
     var counter = 0;
     var elem = document.querySelector("h1");
-    var inst = setInterval(changeSecondWinner, 250);
+    var inst = setInterval(changeSecondWinner, 200);
 
     function changeSecondWinner() {
       elem.innerHTML = secondWinner[counter];
