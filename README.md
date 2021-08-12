@@ -8,11 +8,13 @@
 
 ### What's included
 
++ JavaScript syntax & Basic Constructs
 + Basic codes of HTML5 & CSS3
++ DOM Manipulation
++ ES6+
 + Layouts:
   * Flexbox
   * Grid
-  * Floats
   * Positioning
   * Display
   * Box Model
