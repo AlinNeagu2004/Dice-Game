@@ -1,8 +1,9 @@
 var element = document.querySelector("#btn");
 
-// all CSS styles
+// All CSS styles
 var styles_applied = window.getComputedStyle(element);
 
+// Manipulation for desktop and small devices as well
 if (styles_applied.display === "none") {
   document
     .querySelectorAll(".dice-content img")[0]
@@ -68,7 +69,7 @@ function rollDice() {
       counter++;
       if (counter >= draw.length) {
         counter = 0;
-        // clearInterval(inst);
+        // clearInterval(inst); // Stop the loop
       }
     }
   } else if (randomNumber1 > randomNumber2) {
@@ -103,7 +104,7 @@ function rollDice() {
       counter++;
       if (counter >= firstWinner.length) {
         counter = 0;
-        // clearInterval(inst);
+        // clearInterval(inst); // Stop the loop
       }
     }
   } else {
@@ -138,7 +139,7 @@ function rollDice() {
       counter++;
       if (counter >= secondWinner.length) {
         counter = 0;
-        // clearInterval(inst);
+        // clearInterval(inst); // Stop the loop
       }
     }
   }
